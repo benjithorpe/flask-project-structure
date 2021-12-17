@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flask Project Structure</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.jpg') }}">
+  <!-- Third Party Libraries -->
+    <!-- Bootstrap, Bulma, Tailwind, UIkit, etc... -->
+  <!-- End Third Party Libraries -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <!-- Custom JS -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
+</head>
+<body>
+  <main>
+    {% block main %}{% endblock main %}
+  </main>
+</body>
+</html>
